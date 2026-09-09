@@ -923,63 +923,18 @@
     }
 
     .pcard-thumb {
-      height: 190px;
+      height: 160px;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 3rem;
       position: relative;
       overflow: hidden;
-      background: #0f172a;
-      cursor: pointer;
       transition: transform .4s;
     }
 
-    .proj-video {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.9;
-      transition: opacity 0.3s ease, transform 0.4s ease;
-    }
-
-    .pcard-thumb:hover .proj-video {
-      opacity: 1;
-      transform: scale(1.03);
-    }
-
-    .fullscreen-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: rgba(15, 23, 42, 0.75);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      color: #ffffff;
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 5;
-      opacity: 0.85;
-      transition: all 0.25s ease;
-    }
-
-    .pcard-thumb:hover .fullscreen-btn {
-      opacity: 1;
-      background: var(--cyan);
-      border-color: var(--cyan);
-      box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4);
-      transform: scale(1.08);
-    }
-
-    .fullscreen-btn:hover {
-      transform: scale(1.15) !important;
+    .pcard:hover .pcard-thumb {
+      transform: scale(1.06);
     }
 
     .pt1 {
@@ -1932,19 +1887,7 @@
       <div class="proj-grid rv">
 
         <div class="pcard">
-          <div class="pcard-thumb pt2" title="Click to view full screen">
-            <video class="proj-video" muted loop playsinline preload="metadata">
-              <source src="video/TransitOps%20.mov" type="video/quicktime">
-              <source src="video/TransitOps .mov">
-            </video>
-            <button class="fullscreen-btn" aria-label="Full Screen" title="Full Screen">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-              </svg>
-            </button>
-          </div>
+          <div class="pcard-thumb pt2">🚦</div>
           <div class="pcard-body">
             <div class="pcard-top">
               <h3>Smart Transport Operations Platform (TransitOps)</h3>
@@ -1967,19 +1910,7 @@
         </div>
 
         <div class="pcard">
-          <div class="pcard-thumb pt2" title="Click to view full screen">
-            <video class="proj-video" muted loop playsinline preload="metadata">
-              <source src="video/WebWheels.mov" type="video/quicktime">
-              <source src="video/WebWheels.mov">
-            </video>
-            <button class="fullscreen-btn" aria-label="Full Screen" title="Full Screen">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-              </svg>
-            </button>
-          </div>
+          <div class="pcard-thumb pt2">🚗</div>
           <div class="pcard-body">
             <div class="pcard-top">
               <h3>WebWheels – Vehicle Marketplace Platform</h3>
@@ -2000,19 +1931,7 @@
         </div>
 
         <div class="pcard">
-          <div class="pcard-thumb pt3" title="Click to view full screen">
-            <video class="proj-video" muted loop playsinline preload="metadata">
-              <source src="video/AI-Document-Classification.mov" type="video/quicktime">
-              <source src="video/AI-Document-Classification.mov">
-            </video>
-            <button class="fullscreen-btn" aria-label="Full Screen" title="Full Screen">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-              </svg>
-            </button>
-          </div>
+          <div class="pcard-thumb pt3">🤖</div>
           <div class="pcard-body">
             <div class="pcard-top">
               <h3>AI Document Classification System</h3>
@@ -2032,19 +1951,7 @@
         </div>
 
         <div class="pcard">
-          <div class="pcard-thumb pt1" title="Click to view full screen">
-            <video class="proj-video" muted loop playsinline preload="metadata">
-              <source src="video/Locavista.mp4" type="video/mp4">
-              <source src="video/Locavista.mov" type="video/quicktime">
-            </video>
-            <button class="fullscreen-btn" aria-label="Full Screen" title="Full Screen">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-              </svg>
-            </button>
-          </div>
+          <div class="pcard-thumb pt1">🗺️</div>
           <div class="pcard-body">
             <div class="pcard-top">
               <h3>LocaVista</h3>
@@ -2064,19 +1971,7 @@
         </div>
 
         <div class="pcard">
-          <div class="pcard-thumb pt4" title="Click to view full screen">
-            <video class="proj-video" muted loop playsinline preload="metadata">
-              <source src="video/EasyGo.mov" type="video/quicktime">
-              <source src="video/EasyGo.mov">
-            </video>
-            <button class="fullscreen-btn" aria-label="Full Screen" title="Full Screen">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-              </svg>
-            </button>
-          </div>
+          <div class="pcard-thumb pt4">🚌</div>
           <div class="pcard-body">
             <div class="pcard-top">
               <h3>EasyGo – Transport Reservation System</h3>
@@ -2095,19 +1990,7 @@
         </div>
 
         <div class="pcard">
-          <div class="pcard-thumb pt1" title="Click to view full screen">
-            <video class="proj-video" muted loop playsinline preload="metadata">
-              <source src="video/SPOTIFY%20CLONE.mov" type="video/quicktime">
-              <source src="video/SPOTIFY CLONE.mov">
-            </video>
-            <button class="fullscreen-btn" aria-label="Full Screen" title="Full Screen">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-              </svg>
-            </button>
-          </div>
+          <div class="pcard-thumb pt1">🎵</div>
           <div class="pcard-body">
             <div class="pcard-top">
               <h3>Spotify Clone – Web Player UI</h3>
@@ -2126,19 +2009,7 @@
           </div>
         </div>
         <div class="pcard">
-          <div class="pcard-thumb pt1" title="Click to view full screen">
-            <video class="proj-video" muted loop playsinline preload="metadata">
-              <source src="video/Simon-Says-Game.mp4" type="video/mp4">
-              <source src="video/Simon-Says-Game.mov" type="video/quicktime">
-            </video>
-            <button class="fullscreen-btn" aria-label="Full Screen" title="Full Screen">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-              </svg>
-            </button>
-          </div>
+          <div class="pcard-thumb pt1">🎮</div>
           <div class="pcard-body">
             <div class="pcard-top">
               <h3>Simon Says Game – Memory Challenge</h3>
@@ -2479,39 +2350,6 @@
       reader.readAsDataURL(file);
     }
     function toggleMenu() { }
-
-    // PROJECT VIDEO HOVER PLAY/RESUME, LEAVE PAUSE, & CLICK FULLSCREEN
-    document.querySelectorAll('.pcard-thumb').forEach(thumb => {
-      const video = thumb.querySelector('.proj-video');
-      if (!video) return;
-
-      // Hover enter: resume video playback from current time
-      thumb.addEventListener('mouseenter', () => {
-        const playPromise = video.play();
-        if (playPromise !== undefined) {
-          playPromise.catch(err => {
-            console.log('Video autoplay prevented:', err);
-          });
-        }
-      });
-
-      // Hover leave: pause video (do not reset currentTime)
-      thumb.addEventListener('mouseleave', () => {
-        video.pause();
-      });
-
-      // Click: enter full screen mode
-      thumb.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (video.requestFullscreen) {
-          video.requestFullscreen();
-        } else if (video.webkitRequestFullscreen) {
-          video.webkitRequestFullscreen();
-        } else if (video.msRequestFullscreen) {
-          video.msRequestFullscreen();
-        }
-      });
-    });
   </script>
 </body>
 
